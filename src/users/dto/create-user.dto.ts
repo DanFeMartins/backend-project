@@ -4,6 +4,7 @@ export class CreateUserDto {
   @IsEmail()
   email: string;
 
+  @IsNotEmpty()
   name?: string;
 
   @IsNotEmpty()
